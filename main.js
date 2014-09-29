@@ -50,7 +50,6 @@ $(window).scroll(function () {
                 }.bind(undefined, nodeContainingComment, text);
                 para.appendChild(document.createTextNode(" to view."))
                 nodeContainingComment.appendChild(para);
-                console.log(nodeContainingComment);
             }
         }
     }
