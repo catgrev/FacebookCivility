@@ -39,7 +39,7 @@ $(window).scroll(function () {
                 while (nodeContainingComment.firstChild) {
                     nodeContainingComment.removeChild(nodeContainingComment.firstChild);
                 }
-                var para = document.createElement("p");
+                var para = document.createElement("span");
                 var node = document.createTextNode("This is an impolite comment. Click ");
                 para.appendChild(node);
                 var a = document.createElement('a');
