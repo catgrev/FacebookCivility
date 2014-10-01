@@ -32,7 +32,7 @@ $(window).scroll(function () {
                 continue;
             }
             var post_content = user_posts_in_this_story[0].innerText;
-            console.log(post_content);
+
             if (should_i_hide_this_post(post_content)) {
                 var text = news_feed_story.innerHTML;
                 while (news_feed_story.firstChild) {
