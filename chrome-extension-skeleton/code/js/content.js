@@ -112,18 +112,19 @@ function filter_out_incivil_posts() {
             continue;
           }
           var milliseconds = -1 * new Date().getTime();
-          var to_set_at = get_root_url().child(get_profile_url()).child(clean(permalink_sanitized));
+          var to_set_at = get_root_url().child(get_profile_url()).child("posts").child(clean(permalink_sanitized));
 
-          var to_update_value = function(html, priority) {
-            return {'.value': html, '.priority' : priority};
+          var to_update_value = function (html, priority) {
+            return {'.value': html, '.priority': priority};
           }.bind(null, news_feed_story.outerHTML, milliseconds);
           var to_store_html_at = get_root_url().child(get_profile_url()).child("htmls").child(clean(permalink_sanitized))
-            .transaction(function(currentData) {
-            if(currentData) {
-              return currentData;
-            }
-             return to_update_value();
-;            });
+            .transaction(function (currentData) {
+              if (currentData) {
+                return currentData;
+              }
+              return to_update_value();
+
+            });
 
 
           to_set_at.set(post_content);
