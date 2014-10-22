@@ -2,7 +2,6 @@ var $ = require('./libs/jquery');
 var Firebase = require('firebase');
 var URI = require('URIjs');
 
-
 function is_undefined(x) {
   return typeof x == "undefined";
 }
@@ -90,18 +89,19 @@ function add_incivil_news_feed() {
         link_of_the_node.setAttribute("title", "Incivility on FB");
         link_of_the_node.setAttribute("href", "?sk=nf&show_incivil=true");
       }
-      console.log(cloned_node);
 
       $(cloned_node).insertAfter(new_feed_element);
-      filter_out_incivil_posts();
+      console.log(get_profile_url());
     }
   );
 }
 
-(function () {
-  console.log(is_undefined(undefined));
-  console.log(is_undefined("lol"));
+function get_profile_url() {
+  var profile_url = $(".rfloat")[0].getElementsByTagName('a')[0];
+  return URI(profile_url).segmentCoded(-1);
+}
 
+(function () {
   // here we use SHARED message handlers, so all the contexts support the same
   // commands. but this is NOT typical messaging system usage, since you usually
   // want each context to handle different commands. for this you don't need
@@ -115,10 +115,9 @@ function add_incivil_news_feed() {
   var handlers = require('./modules/handlers').create('ct');
   require('./modules/msg').init('ct', handlers);
 
-  var myFirebaseRef = new Firebase("https://politeness-classfier.firebaseio.com/");
 
-  myFirebaseRef.child("hi").set("lolooll");
   add_incivil_news_feed();
+  filter_out_incivil_posts();
   console.log('jQuery version:', $().jquery);
 
 })();

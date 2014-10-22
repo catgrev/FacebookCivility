@@ -2,55 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0eaab509-2235-47d6-b160-30a35bad4d95" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/images/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/build/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/css/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/html/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/images/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/libs/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/modules/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/background.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/modules/chrome.devtools.mock.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/modules/chrome.devtools.mock.spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/modules/chrome.runtime.mock.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/modules/chrome.runtime.mock.spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/circle.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/modules/circleci.node.fix.spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/css/common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/content.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/crxmake.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/devTools.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/html/devtools.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/modules/form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/modules/handlers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/modules/handlers.spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/requires/jquery-2.1.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/libs/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/lint-options.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/modules/msg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/modules/msg.spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/npm-debug.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/html/options.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/options.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/html/popup.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/popup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/popup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/requires/requirejs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/modules/runner.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/modules/runner.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/FacebookCivility.iml" afterPath="$PROJECT_DIR$/.idea/FacebookCivility.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/incivil_feed.js" afterPath="$PROJECT_DIR$/incivil_feed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/content.js" afterPath="$PROJECT_DIR$/chrome-extension-skeleton/code/js/content.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FacebookCivility.iws" />
@@ -139,8 +94,8 @@
       <file leaf-file-name="content.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chrome-extension-skeleton/code/js/content.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6289308" vertical-offset="1065" max-vertical-offset="1980">
-              <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.6289308" vertical-offset="1185" max-vertical-offset="1965">
+              <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -181,6 +136,10 @@
         <option value="$PROJECT_DIR$/chrome-extension-skeleton/code/js/content.js" />
       </list>
     </option>
+  </component>
+  <component name="JsBowerSettings">
+    <exe-path />
+    <config-path />
   </component>
   <component name="JsGruntFileManager">
     <gruntfiles>
@@ -356,7 +315,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="JavaScript.Libraries" />
+    <property name="options.lastSelected" value="Settings.JavaScript.Linters.JSHint" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -451,29 +410,33 @@
       <created>1412201873104</created>
       <updated>1412201873104</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Now we can make cross domain requests. this took a while.">
+      <created>1413950306953</created>
+      <updated>1413950306953</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Grunt" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934928" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934928" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934928" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -497,7 +460,8 @@
     <MESSAGE value="Init" />
     <MESSAGE value="Removing a console.log&#10;#unprofessionalism" />
     <MESSAGE value="Adding post plugin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding post plugin" />
+    <MESSAGE value="Now we can make cross domain requests. this took a while." />
+    <option name="LAST_COMMIT_MESSAGE" value="Now we can make cross domain requests. this took a while." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -653,8 +617,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chrome-extension-skeleton/code/js/content.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6289308" vertical-offset="1065" max-vertical-offset="1980">
-          <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.6289308" vertical-offset="1185" max-vertical-offset="1965">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding />
         </state>
       </provider>
