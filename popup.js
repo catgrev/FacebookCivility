@@ -13,6 +13,10 @@
 // @copyright  2012+, You
 // ==/UserScript==
 
+console.log("lol");
+
+
+
 function is_undefined(x) {
     return typeof x == "undefined";
 }

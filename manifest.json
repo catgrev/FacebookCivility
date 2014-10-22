@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Facebook Incivility",
+  "version": "2.0",
+  "permissions": [
+    "storage",
+    "background",
+    "tabs",
+    "http://www.facebook.com/*",
+    "https://www.facebook.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+      	"*://facebook.com/*", 
+      	"http://www.facebook.com/*", 
+        "https://www.facebook.com/*"],
+      "js":["popup.js"],
+      "run_at": "document_end"
+      
+    }
+  ]
+}
