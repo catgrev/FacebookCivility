@@ -36,7 +36,7 @@
     <option multistr="false" />
     <option newcap="false" />
     <option noarg="true" />
-    <option node="false" />
+    <option node="true" />
     <option noempty="true" />
     <option nomen="false" />
     <option nonbsp="false" />
@@ -58,7 +58,7 @@
     <option strict="true" />
     <option sub="false" />
     <option supernew="false" />
-    <option trailing="false" />
+    <option trailing="true" />
     <option undef="true" />
     <option unused="false" />
     <option validthis="false" />
