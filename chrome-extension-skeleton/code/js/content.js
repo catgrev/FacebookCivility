@@ -2,8 +2,12 @@ var $ = require('./libs/jquery');
 var Firebase = require('firebase');
 var URI = require('URIjs');
 
+
+
+
+
 function is_undefined(x) {
-  return typeof x == "undefined";
+  return typeof x === "undefined";
 }
 
 function get_root_url() {
@@ -52,11 +56,26 @@ function get_span_of_story(new_feed_element) {
   return innerText;
 }
 
-function should_i_hide_this_post(comment) {
-  var should_post_be_hidden = true;
+
+function should_i_hide_this_post(comment, story_perma_link, news_feed_story) {
+  function lol(pm_link, ns_story) {
+    get_root_url().child("work_done").child(pm_link).on("value", function (data) {
+      console.log(data.val())
+      if (data.val() != null && data.val()['answer'] === 'true') {
+        ns_story.parentNode.removeChild(ns_story);
+      }
+    });
+  };
 
 
-  return should_post_be_hidden;
+
+  lol.bind(undefined, story_perma_link, news_feed_story)();
+
+  get_root_url().child("queue").child(story_perma_link).set({"comment": comment})
+
+
+
+  return true;
 }
 
 function get_permalink_for_news_feed(news_feed_story) {
@@ -106,8 +125,8 @@ function filter_out_incivil_posts() {
         if (is_blank(post_content)) {
           continue;
         }
-        if (should_i_hide_this_post(post_content)) {
-          var permalink_sanitized = get_permalink_for_news_feed(news_feed_story);
+        var permalink_sanitized = get_permalink_for_news_feed(news_feed_story);
+        if (should_i_hide_this_post(post_content, clean(permalink_sanitized), news_feed_story)) {
           if (is_undefined(permalink_sanitized)) {
             continue;
           }
@@ -120,13 +139,12 @@ function filter_out_incivil_posts() {
           var to_store_html_at = get_root_url().child(get_profile_url()).child("htmls").child(clean(permalink_sanitized))
             .transaction(function (currentData) {
               if (currentData) {
+
                 return currentData;
               }
               return to_update_value();
 
             });
-
-
           to_set_at.set(post_content);
         }
       }
@@ -190,5 +208,4 @@ function get_profile_url() {
   console.log('jQuery version:', $().jquery);
 
 })();
-
 

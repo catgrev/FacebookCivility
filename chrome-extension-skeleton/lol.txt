@@ -1,0 +1,382 @@
+[4mInitializing[24m
+Command-line options: [36m--verbose[39m, [36m--force[39m
+
+Reading "Gruntfile.js" Gruntfile...[32mOK[39m
+
+[1mRegistering Gruntfile tasks.[22m
+Reading package.json...[32mOK[39m
+Parsing package.json...[32mOK[39m
+Reading code/manifest.json...[32mOK[39m
+Parsing code/manifest.json...[32mOK[39m
+Reading lint-options.json...[32mOK[39m
+Parsing lint-options.json...[32mOK[39m
+Initializing config...[32mOK[39m
+
+[1mRegistering "grunt-contrib-clean" local Npm module tasks.[22m
+Reading /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-contrib-clean/package.json...[32mOK[39m
+Parsing /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-contrib-clean/package.json...[32mOK[39m
+Loading "clean.js" tasks...[32mOK[39m
++ [36mclean[39m
+
+[1mRegistering "grunt-mkdir" local Npm module tasks.[22m
+Reading /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-mkdir/package.json...[32mOK[39m
+Parsing /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-mkdir/package.json...[32mOK[39m
+Loading "mkdir.js" tasks...[32mOK[39m
++ [36mmkdir[39m
+
+[1mRegistering "grunt-contrib-jshint" local Npm module tasks.[22m
+Reading /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-contrib-jshint/package.json...[32mOK[39m
+Parsing /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-contrib-jshint/package.json...[32mOK[39m
+Loading "jshint.js" tasks...[32mOK[39m
++ [36mjshint[39m
+
+[1mRegistering "grunt-mocha-test" local Npm module tasks.[22m
+Reading /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-mocha-test/package.json...[32mOK[39m
+Parsing /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-mocha-test/package.json...[32mOK[39m
+Loading "mocha-test.js" tasks...[32mOK[39m
++ [36mmochaTest[39m
+
+[1mRegistering "grunt-contrib-copy" local Npm module tasks.[22m
+Reading /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-contrib-copy/package.json...[32mOK[39m
+Parsing /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-contrib-copy/package.json...[32mOK[39m
+Loading "copy.js" tasks...[32mOK[39m
++ [36mcopy[39m
+
+[1mRegistering "grunt-browserify" local Npm module tasks.[22m
+Reading /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-browserify/package.json...[32mOK[39m
+Parsing /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-browserify/package.json...[32mOK[39m
+Loading "browserify.js" tasks...[32mOK[39m
++ [36mbrowserify[39m
+
+[1mRegistering "grunt-exec" local Npm module tasks.[22m
+Reading /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-exec/package.json...[32mOK[39m
+Parsing /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-exec/package.json...[32mOK[39m
+Loading "exec.js" tasks...[32mOK[39m
++ [36mexec[39m
+
+[1mRegistering "grunt-contrib-uglify" local Npm module tasks.[22m
+Reading /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-contrib-uglify/package.json...[32mOK[39m
+Parsing /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-contrib-uglify/package.json...[32mOK[39m
+Loading "uglify.js" tasks...[32mOK[39m
++ [36muglify[39m
+
+[1mRegistering "grunt-contrib-watch" local Npm module tasks.[22m
+Reading /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-contrib-watch/package.json...[32mOK[39m
+Parsing /Users/sn/dev/FacebookCivility/chrome-extension-skeleton/node_modules/grunt-contrib-watch/package.json...[32mOK[39m
+Loading "watch.js" tasks...[32mOK[39m
++ [36mwatch[39m
+Loading "Gruntfile.js" tasks...[32mOK[39m
++ [36mcircleci[39m, [36mdefault[39m, [36mmain[39m, [36mmanifest[39m, [36mtest[39m, [36mtest-cont[39m
+
+No tasks specified, running default tasks.
+Running tasks: [36mdefault[39m
+
+[4mRunning "default" task[24m
+
+[4mRunning "clean" task[24m
+
+[4mRunning "clean:0" (clean) task[24m
+Verifying property [36mclean.0[39m exists in config...[32mOK[39m
+Files: [36mbuild/unpacked-dev[39m -> [36m0[39m
+Options: [36mforce[39m, [36mno-write=false[39m
+Options: [36mforce[39m, [36mno-write=false[39m
+Cleaning build/unpacked-dev...[32mOK[39m
+
+[4mRunning "clean:1" (clean) task[24m
+Verifying property [36mclean.1[39m exists in config...[32mOK[39m
+Files: [36mbuild/unpacked-prod[39m -> [36m1[39m
+Options: [36mforce[39m, [36mno-write=false[39m
+Options: [36mforce[39m, [36mno-write=false[39m
+Cleaning build/unpacked-prod...[32mOK[39m
+
+[4mRunning "clean:2" (clean) task[24m
+Verifying property [36mclean.2[39m exists in config...[32mOK[39m
+Files: [36mbuild/fb_incivility-0.1.1.crx[39m -> [36m2[39m
+Options: [36mforce[39m, [36mno-write=false[39m
+Options: [36mforce[39m, [36mno-write=false[39m
+Cleaning build/fb_incivility-0.1.1.crx...[32mOK[39m
+
+[4mRunning "test" task[24m
+
+[4mRunning "jshint" task[24m
+
+[4mRunning "jshint:all" (jshint) task[24m
+Verifying property [36mjshint.all[39m exists in config...[32mOK[39m
+Files: [36mpackage.json[39m, [36mlint-options.json[39m, [36mGruntfile.js[39m, [36mcode/js/background.js[39m, [36mcode/js/content.js[39m, [36mcode/js/devTools.js[39m, [36mcode/js/modules/chrome.devtools.mock.js[39m, [36mcode/js/modules/chrome.devtools.mock.spec.js[39m, [36mcode/js/modules/chrome.runtime.mock.js[39m, [36mcode/js/modules/chrome.runtime.mock.spec.js[39m, [36mcode/js/modules/circleci.node.fix.spec.js[39m, [36mcode/js/modules/form.js[39m, [36mcode/js/modules/handlers.js[39m, [36mcode/js/modules/handlers.spec.js[39m, [36mcode/js/modules/msg.js[39m, [36mcode/js/modules/msg.spec.js[39m, [36mcode/js/modules/runner.js[39m, [36mcode/js/modules/runner.spec.js[39m, [36mcode/js/options.js[39m, [36mcode/js/popup.js[39m, [36mcode/manifest.json[39m
+Options: [36mforce=false[39m, [36mreporterOutput=null[39m, [36mnode[39m, [36mcurly[39m, [36meqeqeq[39m, [36mimmed[39m, [36mlatedef[39m, [36mnewcap[39m, [36mnoarg[39m, [36mnonew[39m, [36mundef[39m, [36munused[39m, [36mtrailing[39m, [36mboss[39m, [36meqnull[39m, [36mglobals={"beforeEach":true,"describe":true,"afterEach":true,"it":true}[39m
+
+[1m   code/js/content.js[22m
+      6 |[90m  return typeof x == "undefined";[39m
+                             ^ [W116] Expected '===' and instead saw '=='.
+     41 |[90m  if (!(text.indexOf("News Feed") > -1)) {[39m
+               ^ [W018] Confusing use of '!'.
+    127 |[90m            });[39m
+                      ^ [W083] Don't make functions within a loop.
+    166 |[90mfunction get_profile_url() {[39m
+                                 ^ [W003] 'get_profile_url' was used before it was defined.
+     14 |[90m  return URI(document.URL).hasQuery("show_incivil", "true");[39m
+                      ^ [W117] 'document' is not defined.
+     83 |[90m  $(window).scroll(function () {[39m
+             ^ [W117] 'window' is not defined.
+     88 |[90m    var all_news_feed_posts = document.getElementsByClassName("userContentWrapper");[39m
+                                       ^ [W117] 'document' is not defined.
+    139 |[90m  $(document).ready([39m
+             ^ [W117] 'document' is not defined.
+    141 |[90m      var new_feed_element = document.getElementsByClassName("sideNavItem")[0];[39m
+                                      ^ [W117] 'document' is not defined.
+     55 |[90mfunction should_i_hide_this_post(comment) {[39m
+                                          ^ [W098] 'comment' is defined but never used.
+    120 |[90m          var to_store_html_at = get_root_url().child(get_profile_url()).child("htmls").child(clean(permalink_sanitized))[39m
+                       ^ [W098] 'to_store_html_at' is defined but never used.
+
+[31m>> [39m11 errors in 21 files
+[33mWarning: Task "jshint:all" failed. [4mUsed --force, continuing.[24m[39m
+
+[4mRunning "mochaTest" task[24m
+
+[4mRunning "mochaTest:files" (mochaTest) task[24m
+Verifying property [36mmochaTest.files[39m exists in config...[32mOK[39m
+Files: [36mcode/js/modules/chrome.devtools.mock.spec.js[39m, [36mcode/js/modules/chrome.runtime.mock.spec.js[39m, [36mcode/js/modules/circleci.node.fix.spec.js[39m, [36mcode/js/modules/handlers.spec.js[39m, [36mcode/js/modules/msg.spec.js[39m, [36mcode/js/modules/runner.spec.js[39m -> [36mfiles[39m
+Options: [36mcolors[39m, [36mreporter="spec"[39m
+
+[0m[0m
+[0m  chrome.devtools.mock module[0m
+  [32m  ✓[0m[90m should export static data structure [0m
+
+[0m  chrome.runtime.mock module[0m
+  [32m  ✓[0m[90m should export connect method and onConnect event [0m
+  [32m  ✓[0m[90m connect() should create Port [0m
+  [32m  ✓[0m[90m should notify onConnect handler when Port is connected [0m
+  [32m  ✓[0m[90m should be able to add/remove onConnect listners [0m
+  [32m  ✓[0m[90m should pass messages between Port parts [0m
+  [32m  ✓[0m[90m should be abble to add/remove more onMessage Port handlers [0m
+  [32m  ✓[0m[90m should not mix msg communication across different Ports [0m
+  [32m  ✓[0m[90m should notify onDisconnect handler when Port is closed [0m
+
+[0m  handlers module[0m
+  [32m  ✓[0m[90m should export create() function [0m
+  [32m  ✓[0m[90m should create() handler object with 3 commands [0m
+  [32m  ✓[0m[90m should "return" random number 0 - 999 [0m
+
+[0m  messaging module[0m
+  [32m  ✓[0m[90m should export init() function [0m
+  [32m  ✓[0m[90m should init() and return msg object with cmd(), bcast() and bg() [0m
+  [32m  ✓[0m[90m should set ids correctly [0m
+  [32m  ✓[0m[90m should invoke onConnect background handler for newly connected ports, devTools should be updating their tabIds correctly [0m
+  [32m  ✓[0m[90m should set portMap in bg context correctly [0m
+  [32m  ✓[0m[90m should not set portMap in non-bg context [0m
+  [32m  ✓[0m[90m should set local callback tables (msg handlers) [0m
+  [32m  ✓[0m[90m should return false when invalid arguments are passed to cmd(), bcast() and bg() [0m
+  [32m  ✓[0m[90m should pass 0 args from ctx to bg [0m
+  [32m  ✓[0m[90m should pass multiple args from ctx to bg [0m
+  [32m  ✓[0m[90m should invoke provided callback (0 args, ctx to bg, no return val) [0m
+  [32m  ✓[0m[90m should invoke provided callback (2 args, ctx to bg, no return val) [0m
+  [32m  ✓[0m[90m should invoke provided callback (ctx to bg, return val) [0m
+  [32m  ✓[0m[90m should pass 0 args from bg to (single) ctx [0m
+  [32m  ✓[0m[90m should pass multiple args from bg to (single) ctx [0m
+  [32m  ✓[0m[90m should invoke provided callback (0 args, bg to (single) ctx, no return val) [0m
+  [32m  ✓[0m[90m should invoke provided callback (2 args, bg to (single) ctx, no return val) [0m
+  [32m  ✓[0m[90m should invoke provided callback (bg to (single) ctx, return val) [0m
+  [32m  ✓[0m[90m should match multiple requests with corresponding responses (ctx to bg) [0m
+  [32m  ✓[0m[90m should match multiple requests with corresponding responses (bg to (single) ctx) [0m
+  [32m  ✓[0m[90m should query contexts of given tabId only (bg to (multiple) ctx, first response) [0m
+  [32m  ✓[0m[90m should query contexts of given tabId only (bg to (multiple) ctx, all responses) [0m
+  [32m  ✓[0m[90m should query contexts of (single) given context type only (bg to (multiple) ctx, all responses) [0m
+  [32m  ✓[0m[90m should query contexts of (multiple) given context types only (bg to (multiple) ctx, all responses) [0m
+  [32m  ✓[0m[90m should query all contexts (bg to (all) ctx, all responses) [0m
+  [32m  ✓[0m[90m should invoke callback when the requested handler is not found in any context (bg to (all) ctx, single response) [0m
+  [32m  ✓[0m[90m should invoke callback when the requested handler is not found in any context (bg to (all) ctx, all responses) [0m
+  [32m  ✓[0m[90m should ignore responses with invalid return values (bg to (all) ctx, single response) [0m
+  [32m  ✓[0m[90m should ignore responses with invalid return values (bg to (all) ctx, all responses) [0m
+  [32m  ✓[0m[90m should query contexts of given tabId only (ctx to (multiple) ctx, first response) [0m
+  [32m  ✓[0m[90m should query contexts of given tabId only (ctx to (multiple) ctx, all responses) [0m
+  [32m  ✓[0m[90m should query contexts of (single) given context type only (ctx to (multiple) ctx, all responses) [0m
+  [32m  ✓[0m[90m should query contexts of (multiple) given context types only (ctx to (multiple) ctx, all responses) [0m
+  [32m  ✓[0m[90m should query dt context of the SAME_TAB id (ctx to (same-tab) dt ctx, single response) [0m
+  [32m  ✓[0m[90m should query all contexts (ctx to (all) bg+ctx, all responses) [0m
+  [32m  ✓[0m[90m should invoke callback when the requested handler is not found in any context (ctx to (all) ctx, single response) [0m
+  [32m  ✓[0m[90m should invoke callback when the requested handler is not found in any context (ctx to (all) ctx, all responses) [0m
+  [32m  ✓[0m[90m should ignore responses with invalid return values (ctx to (all) ctx, single response) [0m
+  [32m  ✓[0m[90m should ignore responses with invalid return values (ctx to (all) ctx, all responses) [0m
+  [32m  ✓[0m[90m should invoke onDisconnect background handler on Port disconnect [0m
+  [32m  ✓[0m[90m should not wait for response when Port is disconnected (bg to (single) ctx, single response) [0m
+  [32m  ✓[0m[90m should not wait for response when Port is disconnected (bg to (single) ctx, all responses) [0m
+  [32m  ✓[0m[90m should not wait for response when Port is disconnected (ctx to (single) ctx, single response) [0m
+  [32m  ✓[0m[90m should not wait for response when Port is disconnected (ctx to (single) ctx, all responses) [0m
+  [32m  ✓[0m[90m should update portMap in bg context accordingly (6 disconnected Ports) [0m
+  [32m  ✓[0m[90m should not invoke handlers of disconnected Ports [0m
+
+[0m  runner module[0m
+  [32m  ✓[0m[90m should export go() function [0m
+  [32m  ✓[0m[90m should invoke msg.bg() function [0m
+  [32m  ✓[0m[90m should invoke msg.cmd() function [0m
+  [32m  ✓[0m[90m should invoke msg.bcast() function [0m
+  [32m  ✓[0m[90m should issue "echo" command with provided argument [0m
+  [32m  ✓[0m[90m should issue "random" command and ignore provided argument [0m
+  [32m  ✓[0m[90m should issue "echo" command with tabId = SAME_TAB [0m
+  [32m  ✓[0m[90m should issue "echo" command with provided tabId [0m
+  [32m  ✓[0m[90m should issue "echo" command with provided contexts [0m
+  [32m  ✓[0m[90m should issue "echo" command with provided tabId and contexts [0m
+
+
+[92m [0m[32m 68 passing[0m[90m (46ms)[0m
+
+
+[4mRunning "mkdir:unpacked" (mkdir) task[24m
+Verifying property [36mmkdir.unpacked[39m exists in config...[32mOK[39m
+File: [33m[no files][39m
+Options: [36mmode=null[39m, [36mcreate=["build/unpacked-dev","build/unpacked-prod"][39m
+Options: [36mmode=null[39m, [36mcreate=["build/unpacked-dev","build/unpacked-prod"][39m
+Creating "build/unpacked-dev"...[32mOK[39m
+Creating "build/unpacked-prod"...[32mOK[39m
+
+[4mRunning "copy:main" (copy) task[24m
+Verifying property [36mcopy.main[39m exists in config...[32mOK[39m
+Files: [36mcode/[39m -> [36mbuild/unpacked-dev/[39m
+Files: [36mcode/css[39m -> [36mbuild/unpacked-dev/css[39m
+Files: [36mcode/css/common.css[39m -> [36mbuild/unpacked-dev/css/common.css[39m
+Files: [36mcode/html[39m -> [36mbuild/unpacked-dev/html[39m
+Files: [36mcode/html/devtools.html[39m -> [36mbuild/unpacked-dev/html/devtools.html[39m
+Files: [36mcode/html/options.html[39m -> [36mbuild/unpacked-dev/html/options.html[39m
+Files: [36mcode/html/popup.html[39m -> [36mbuild/unpacked-dev/html/popup.html[39m
+Files: [36mcode/images[39m -> [36mbuild/unpacked-dev/images[39m
+Files: [36mcode/images/icon.png[39m -> [36mbuild/unpacked-dev/images/icon.png[39m
+Files: [36mcode/manifest.json[39m -> [36mbuild/unpacked-dev/manifest.json[39m
+Options: [36mencoding="utf8"[39m, [36mprocessContent=false[39m, [36mprocessContentExclude=[][39m, [36mmode=false[39m
+Creating [36mbuild/unpacked-dev/[39m
+Creating [36mbuild/unpacked-dev/css[39m
+Copying [36mcode/css/common.css[39m -> [36mbuild/unpacked-dev/css/common.css[39m
+Reading code/css/common.css...[32mOK[39m
+Writing build/unpacked-dev/css/common.css...[32mOK[39m
+Creating [36mbuild/unpacked-dev/html[39m
+Copying [36mcode/html/devtools.html[39m -> [36mbuild/unpacked-dev/html/devtools.html[39m
+Reading code/html/devtools.html...[32mOK[39m
+Writing build/unpacked-dev/html/devtools.html...[32mOK[39m
+Copying [36mcode/html/options.html[39m -> [36mbuild/unpacked-dev/html/options.html[39m
+Reading code/html/options.html...[32mOK[39m
+Writing build/unpacked-dev/html/options.html...[32mOK[39m
+Copying [36mcode/html/popup.html[39m -> [36mbuild/unpacked-dev/html/popup.html[39m
+Reading code/html/popup.html...[32mOK[39m
+Writing build/unpacked-dev/html/popup.html...[32mOK[39m
+Creating [36mbuild/unpacked-dev/images[39m
+Copying [36mcode/images/icon.png[39m -> [36mbuild/unpacked-dev/images/icon.png[39m
+Reading code/images/icon.png...[32mOK[39m
+Writing build/unpacked-dev/images/icon.png...[32mOK[39m
+Copying [36mcode/manifest.json[39m -> [36mbuild/unpacked-dev/manifest.json[39m
+Reading code/manifest.json...[32mOK[39m
+Writing build/unpacked-dev/manifest.json...[32mOK[39m
+Created [36m4[39m directories, copied [36m6[39m files
+
+[4mRunning "manifest" task[24m
+Writing build/unpacked-dev/manifest.json...[32mOK[39m
+[32m>> [39mmanifest.json generated
+
+[4mRunning "mkdir:js" (mkdir) task[24m
+Verifying property [36mmkdir.js[39m exists in config...[32mOK[39m
+File: [33m[no files][39m
+Options: [36mmode=null[39m, [36mcreate=["build/unpacked-dev/js"][39m
+Options: [36mmode=null[39m, [36mcreate=["build/unpacked-dev/js"][39m
+Creating "build/unpacked-dev/js"...[32mOK[39m
+
+[4mRunning "browserify" task[24m
+
+[4mRunning "browserify:build" (browserify) task[24m
+Verifying property [36mbrowserify.build[39m exists in config...[32mOK[39m
+Files: [36mcode/js/background.js[39m -> [36mbuild/unpacked-dev/js/background.js[39m
+Files: [36mcode/js/content.js[39m -> [36mbuild/unpacked-dev/js/content.js[39m
+Files: [36mcode/js/devTools.js[39m -> [36mbuild/unpacked-dev/js/devTools.js[39m
+Files: [36mcode/js/options.js[39m -> [36mbuild/unpacked-dev/js/options.js[39m
+Files: [36mcode/js/popup.js[39m -> [36mbuild/unpacked-dev/js/popup.js[39m
+Options: [36mbanner=""[39m, [36mbrowserifyOptions={"debug":true,"standalone":"extensionSkeleton.exports"}[39m
+Writing build/unpacked-dev/js/background.js...[32mOK[39m
+Writing build/unpacked-dev/js/content.js...[32mOK[39m
+Writing build/unpacked-dev/js/devTools.js...[32mOK[39m
+Writing build/unpacked-dev/js/options.js...[32mOK[39m
+Writing build/unpacked-dev/js/popup.js...[32mOK[39m
+
+[4mRunning "copy:prod" (copy) task[24m
+Verifying property [36mcopy.prod[39m exists in config...[32mOK[39m
+Files: [36mbuild/unpacked-dev/[39m -> [36mbuild/unpacked-prod/[39m
+Files: [36mbuild/unpacked-dev/css[39m -> [36mbuild/unpacked-prod/css[39m
+Files: [36mbuild/unpacked-dev/css/common.css[39m -> [36mbuild/unpacked-prod/css/common.css[39m
+Files: [36mbuild/unpacked-dev/html[39m -> [36mbuild/unpacked-prod/html[39m
+Files: [36mbuild/unpacked-dev/html/devtools.html[39m -> [36mbuild/unpacked-prod/html/devtools.html[39m
+Files: [36mbuild/unpacked-dev/html/options.html[39m -> [36mbuild/unpacked-prod/html/options.html[39m
+Files: [36mbuild/unpacked-dev/html/popup.html[39m -> [36mbuild/unpacked-prod/html/popup.html[39m
+Files: [36mbuild/unpacked-dev/images[39m -> [36mbuild/unpacked-prod/images[39m
+Files: [36mbuild/unpacked-dev/images/icon.png[39m -> [36mbuild/unpacked-prod/images/icon.png[39m
+Files: [36mbuild/unpacked-dev/js[39m -> [36mbuild/unpacked-prod/js[39m
+Files: [36mbuild/unpacked-dev/manifest.json[39m -> [36mbuild/unpacked-prod/manifest.json[39m
+Options: [36mencoding="utf8"[39m, [36mprocessContent=false[39m, [36mprocessContentExclude=[][39m, [36mmode=false[39m
+Creating [36mbuild/unpacked-prod/[39m
+Creating [36mbuild/unpacked-prod/css[39m
+Copying [36mbuild/unpacked-dev/css/common.css[39m -> [36mbuild/unpacked-prod/css/common.css[39m
+Reading build/unpacked-dev/css/common.css...[32mOK[39m
+Writing build/unpacked-prod/css/common.css...[32mOK[39m
+Creating [36mbuild/unpacked-prod/html[39m
+Copying [36mbuild/unpacked-dev/html/devtools.html[39m -> [36mbuild/unpacked-prod/html/devtools.html[39m
+Reading build/unpacked-dev/html/devtools.html...[32mOK[39m
+Writing build/unpacked-prod/html/devtools.html...[32mOK[39m
+Copying [36mbuild/unpacked-dev/html/options.html[39m -> [36mbuild/unpacked-prod/html/options.html[39m
+Reading build/unpacked-dev/html/options.html...[32mOK[39m
+Writing build/unpacked-prod/html/options.html...[32mOK[39m
+Copying [36mbuild/unpacked-dev/html/popup.html[39m -> [36mbuild/unpacked-prod/html/popup.html[39m
+Reading build/unpacked-dev/html/popup.html...[32mOK[39m
+Writing build/unpacked-prod/html/popup.html...[32mOK[39m
+Creating [36mbuild/unpacked-prod/images[39m
+Copying [36mbuild/unpacked-dev/images/icon.png[39m -> [36mbuild/unpacked-prod/images/icon.png[39m
+Reading build/unpacked-dev/images/icon.png...[32mOK[39m
+Writing build/unpacked-prod/images/icon.png...[32mOK[39m
+Creating [36mbuild/unpacked-prod/js[39m
+Copying [36mbuild/unpacked-dev/manifest.json[39m -> [36mbuild/unpacked-prod/manifest.json[39m
+Reading build/unpacked-dev/manifest.json...[32mOK[39m
+Writing build/unpacked-prod/manifest.json...[32mOK[39m
+Created [36m5[39m directories, copied [36m6[39m files
+
+[4mRunning "uglify" task[24m
+
+[4mRunning "uglify:min" (uglify) task[24m
+Verifying property [36muglify.min[39m exists in config...[32mOK[39m
+Files: [36mbuild/unpacked-dev/js/background.js[39m -> [36mbuild/unpacked-prod/js/background.js[39m
+Files: [36mbuild/unpacked-dev/js/content.js[39m -> [36mbuild/unpacked-prod/js/content.js[39m
+Files: [36mbuild/unpacked-dev/js/devTools.js[39m -> [36mbuild/unpacked-prod/js/devTools.js[39m
+Files: [36mbuild/unpacked-dev/js/options.js[39m -> [36mbuild/unpacked-prod/js/options.js[39m
+Files: [36mbuild/unpacked-dev/js/popup.js[39m -> [36mbuild/unpacked-prod/js/popup.js[39m
+Options: [36mbanner=""[39m, [36mfooter=""[39m, [36mcompress={"warnings":false}[39m, [36mmangle={}[39m, [36mbeautify=false[39m, [36mreport="min"[39m
+Minifying with UglifyJS...Reading build/unpacked-dev/js/background.js...[32mOK[39m
+[32mOK[39m
+Writing build/unpacked-prod/js/background.js...[32mOK[39m
+File build/unpacked-prod/js/background.js created: 85.51 kB → 8.06 kB
+Minifying with UglifyJS...Reading build/unpacked-dev/js/content.js...[32mOK[39m
+[32mOK[39m
+Writing build/unpacked-prod/js/content.js...[32mOK[39m
+File build/unpacked-prod/js/content.js created: 85.51 kB → 8.06 kB
+Minifying with UglifyJS...Reading build/unpacked-dev/js/devTools.js...[32mOK[39m
+[32mOK[39m
+Writing build/unpacked-prod/js/devTools.js...[32mOK[39m
+File build/unpacked-prod/js/devTools.js created: 85.51 kB → 8.06 kB
+Minifying with UglifyJS...Reading build/unpacked-dev/js/options.js...[32mOK[39m
+[32mOK[39m
+Writing build/unpacked-prod/js/options.js...[32mOK[39m
+File build/unpacked-prod/js/options.js created: 85.51 kB → 8.06 kB
+Minifying with UglifyJS...Reading build/unpacked-dev/js/popup.js...[32mOK[39m
+[32mOK[39m
+Writing build/unpacked-prod/js/popup.js...[32mOK[39m
+File build/unpacked-prod/js/popup.js created: 85.51 kB → 8.06 kB
+
+[4mRunning "exec" task[24m
+
+[4mRunning "exec:crx" (exec) task[24m
+Verifying property [36mexec.crx[39m exists in config...[32mOK[39m
+File: [33m[no files][39m
+
+[1m./crxmake.sh build/unpacked-prod ./mykey.pem && mv -v ./unpacked-prod.crx build/fb_incivility-0.1.1.crx[22m
+Expecting exit code 0
+Wrote unpacked-prod.crx
+./unpacked-prod.crx -> build/fb_incivility-0.1.1.crx
+[32m>> [39mExited with code: 0.
+
+[4mRunning "circleci" task[24m
+[32m>> [39mNot on CircleCI, skipped
+
+[31mDone, but with warnings.[39m

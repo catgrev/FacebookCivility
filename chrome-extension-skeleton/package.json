@@ -2,7 +2,9 @@
   "name": "fb_incivility",
   "version": "0.1.1",
   "description": "Bare Google Chrome extension skeleton.",
-  "dependencies": {},
+  "dependencies": {
+    "firebase": "^2.0.4"
+  },
   "devDependencies": {
     "browserify": "~3.39.0",
     "eventemitter2": "^0.4.13",

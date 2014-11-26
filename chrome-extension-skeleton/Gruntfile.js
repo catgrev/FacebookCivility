@@ -82,7 +82,8 @@ module.exports = function (grunt) {
     },
 
     uglify: {
-      min: { files: fileMaps.uglify }
+      min: { files: fileMaps.uglify },
+      options: {beautify: true}
     },
 
     watch: {
