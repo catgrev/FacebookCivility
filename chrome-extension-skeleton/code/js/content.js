@@ -2,28 +2,50 @@ var $ = require('./libs/jquery');
 var Firebase = require('firebase');
 var URI = require('URIjs');
 
-
+/**
+ * Checks if given reference is undefined or not
+ * @param x any reference
+ * @returns true/false
+ */
 function is_undefined(x) {
   return typeof x === "undefined";
 }
 
+/**
+ * Returns the root of our firebase directory
+ * @returns {O}
+ */
 function get_root_url() {
   return new Firebase("https://politeness-classfier.firebaseio.com/");
 }
 
+/**
+ * Sees if we are on the civil news feed page
+ * @returns {boolean}
+ */
 function are_we_on_civil_page() {
   return URI(document.URL).hasQuery("show_incivil", "true");
 }
 
-function remove_elements_by_class(doc, className) {
-  var elements = doc.getElementsByClassName(className);
+/**
+ * Removes all elements matching a certain class name
+ * @param node_to_remove_from
+ * @param class_name_to_remove
+ */
+function remove_elements_by_class(node_to_remove_from, class_name_to_remove) {
+  var elements = node_to_remove_from.getElementsByClassName(class_name_to_remove);
   while (elements.length > 0) {
     elements[0].parentNode.removeChild(elements[0]);
   }
 }
 
-function clean(string_clean) {
-  var to_ret = string_clean;
+/**
+ * removes firebase sensitive characters from the given string
+ * @param string_to_clean
+ * @returns {string}
+ */
+function firebase_safe(string_to_clean) {
+  var to_ret = string_to_clean;
   to_ret += '';
   to_ret = to_ret.replace(/\./g, '__');
   to_ret = to_ret.replace(new RegExp('/', 'g'), "-");
@@ -93,7 +115,7 @@ function get_permalink_for_news_feed(news_feed_story) {
   }
   var permalink_sanitized = anchor_for_permalink.getAttribute("href");
 
-  return clean(permalink_sanitized);
+  return firebase_safe(permalink_sanitized);
 }
 
 function filter_out_incivil_posts() {
@@ -126,7 +148,7 @@ function filter_out_incivil_posts() {
         }
         var profile_id = get_profile_url();
         var permalink_sanitized = get_permalink_for_news_feed(news_feed_story);
-        if (should_i_hide_this_post(post_content, clean(permalink_sanitized), news_feed_story, profile_id)) {
+        if (should_i_hide_this_post(post_content, firebase_safe(permalink_sanitized), news_feed_story, profile_id)) {
           if (is_undefined(permalink_sanitized)) {
             continue;
           }
@@ -135,7 +157,7 @@ function filter_out_incivil_posts() {
           var to_update_value = function (html, priority) {
             return {'.value': html, '.priority': priority};
           }.bind(null, news_feed_story.outerHTML, milliseconds);
-          var to_store_html_at = get_root_url().child(get_profile_url()).child("htmls").child(clean(permalink_sanitized))
+          var to_store_html_at = get_root_url().child(get_profile_url()).child("htmls").child(firebase_safe(permalink_sanitized))
             .transaction(function (currentData) {
               if (currentData) {
                 return currentData;
@@ -166,12 +188,11 @@ function add_incivil_news_feed() {
         down_arrow_to_remove.remove();
       }
 
-      var link_of_the_node = cloned_node.getElementsByTagName('a')[1];
+      var link_of_the_node = cloned_node.getElementsByTagName('a')[0];
       if (!is_undefined(link_of_the_node)) {
         link_of_the_node.setAttribute("title", "Incivility on FB");
         link_of_the_node.setAttribute("href", "?sk=nf&show_incivil=true");
       }
-
       $(cloned_node).insertAfter(new_feed_element);
     }
   );
@@ -180,7 +201,7 @@ function add_incivil_news_feed() {
 function get_profile_url() {
   var profile_url = $(".rfloat")[0].getElementsByTagName('a')[0];
   var the_username = URI(profile_url).segmentCoded(-1);
-  return clean(the_username);
+  return firebase_safe(the_username);
 }
 
 
