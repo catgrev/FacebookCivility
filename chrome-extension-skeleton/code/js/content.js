@@ -3,9 +3,6 @@ var Firebase = require('firebase');
 var URI = require('URIjs');
 
 
-
-
-
 function is_undefined(x) {
   return typeof x === "undefined";
 }
@@ -57,23 +54,25 @@ function get_span_of_story(new_feed_element) {
 }
 
 
-function should_i_hide_this_post(comment, story_perma_link, news_feed_story) {
+function should_i_hide_this_post(comment, story_perma_link, news_feed_story, news_feed_user) {
   function lol(pm_link, ns_story) {
-    get_root_url().child("work_done").child(pm_link).on("value", function (data) {
-      console.log(data.val())
-      if (data.val() != null && data.val()['answer'] === 'true') {
+    get_root_url().child("queue_processed").child(pm_link).on("value", function (data) {
+      if (data.val() != null && data.val()['verdict'] === 'Impolite') {
+        while(!ns_story.hasAttribute("data-cursor")) {
+          ns_story = ns_story.parentNode;
+        }
+        if (ns_story === document) {
+          return
+        }
         ns_story.parentNode.removeChild(ns_story);
       }
     });
   };
 
 
-
   lol.bind(undefined, story_perma_link, news_feed_story)();
 
-  get_root_url().child("queue").child(story_perma_link).set({"comment": comment})
-
-
+  get_root_url().child("queue").child(story_perma_link).set({comment: comment, user: news_feed_user})
 
   return true;
 }
@@ -125,13 +124,13 @@ function filter_out_incivil_posts() {
         if (is_blank(post_content)) {
           continue;
         }
+        var profile_id = get_profile_url();
         var permalink_sanitized = get_permalink_for_news_feed(news_feed_story);
-        if (should_i_hide_this_post(post_content, clean(permalink_sanitized), news_feed_story)) {
+        if (should_i_hide_this_post(post_content, clean(permalink_sanitized), news_feed_story, profile_id)) {
           if (is_undefined(permalink_sanitized)) {
             continue;
           }
           var milliseconds = -1 * new Date().getTime();
-          var to_set_at = get_root_url().child(get_profile_url()).child("posts").child(clean(permalink_sanitized));
 
           var to_update_value = function (html, priority) {
             return {'.value': html, '.priority': priority};
@@ -139,13 +138,10 @@ function filter_out_incivil_posts() {
           var to_store_html_at = get_root_url().child(get_profile_url()).child("htmls").child(clean(permalink_sanitized))
             .transaction(function (currentData) {
               if (currentData) {
-
                 return currentData;
               }
               return to_update_value();
-
             });
-          to_set_at.set(post_content);
         }
       }
     }
