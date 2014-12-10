@@ -204,6 +204,28 @@ function get_profile_url() {
   return firebase_safe(the_username);
 }
 
+function remove_all_children_of(node) {
+  while (node.firstChild) {
+    node.removeChild(node.firstChild);
+  }
+}
+
+function fill_in_incivil_posts_if_needed() {
+  $(document).ready(
+    function () {
+      if(!are_we_on_civil_page()) {
+        return
+      }
+      var root_element = document.getElementsByClassName("userContentWrapper")[0];
+      while(!root_element.hasAttribute("id") || root_element.getAttribute("id").indexOf("topnews_main_stream") === -1) {
+        root_element = root_element.parentNode;
+      }
+      remove_all_children_of(root_element)
+
+       
+    }
+  )
+}
 
 (function () {
   // here we use SHARED message handlers, so all the contexts support the same
@@ -222,6 +244,7 @@ function get_profile_url() {
 
   add_incivil_news_feed();
   filter_out_incivil_posts();
+  fill_in_incivil_posts_if_needed();
   console.log('jQuery version:', $().jquery);
 
 })();
